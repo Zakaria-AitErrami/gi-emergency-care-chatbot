@@ -366,7 +366,6 @@ with st.sidebar:
     
     st.divider()
     st.caption("⚠️ Cet outil est destiné aux professionnels de santé uniquement. Il ne remplace pas le jugement clinique.")
-    st.caption(f"🤖 Modèle: {MODEL}")
 
 # Input utilisateur en premier (en haut)
 st.subheader("✍️ Posez votre question")
