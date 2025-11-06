@@ -9,6 +9,16 @@ st.set_page_config(
     layout="wide"
 )
 
+# Hide Streamlit branding
+hide_streamlit_style = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 # Initialisation du client OpenAI
 @st.cache_resource
 def get_openai_client():
